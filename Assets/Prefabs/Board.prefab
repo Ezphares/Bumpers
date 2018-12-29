@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1669318671660854}
+  m_IsPrefabAsset: 1
+--- !u!1 &1669318671660854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4085029896928270}
+  - component: {fileID: 114327186743957084}
+  - component: {fileID: 114216070786381280}
+  m_Layer: 0
+  m_Name: Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4085029896928270
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669318671660854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114216070786381280
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669318671660854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0c5aa609911e545a063d5db147a971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameplayConstants: {fileID: 0}
+  board: {fileID: 114327186743957084}
+  halfTurnTime: 0.2
+  isPaused: 1
+  gameProgress: 0
+  victoryUI: {fileID: 0}
+  defeatUI: {fileID: 0}
+  pauseUI: {fileID: 0}
+  resumeButton: {fileID: 0}
+  countDownText: {fileID: 0}
+  halfTurnDeltaT: 0
+  isOffTurn: 0
+  goalPickups: []
+  countdown: 0
+--- !u!114 &114327186743957084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669318671660854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed44332032e38d04b993c82b90f92873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardSize:
+    x: 7
+    y: 7
+  gameplayConstants: {fileID: 11400000, guid: 7f31f21554683be4c9c2243619d04e18, type: 2}
+  mainCamera: {fileID: 0}
+  pickups:
+  - x: 3
+    y: 4
+    pickupPrefab: {fileID: 114564301732891072, guid: 221bf2913c11aa3478d87838f00b8407,
+      type: 2}
+    isVaulted: 1
+    vaultAngle: 90
+  balls:
+  - x: 3
+    y: 3
+    forwardAngle: 0
+  tilePrefab: {fileID: 114228564454089038, guid: 91ee545b77d14184a968bdaa874c9346,
+    type: 2}
+  ballPrefab: {fileID: 114675451552541188, guid: 678db96fc9644114f9ad623ce8317438,
+    type: 2}
+  activeBalls: []
+  activeTiles: []
+  activeRules: []
